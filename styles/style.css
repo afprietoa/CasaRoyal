@@ -497,6 +497,62 @@ body{
 }
 
 /*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
+.contact{
+  width: 100%;
+  height: 100vh;
+  margin-top: 3.2rem;
+  color: var(--white);
+  background: no-repeat center/cover url("../assets/images/hero-bg-image2.png");
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.8rem;
+}
+.contact .row .col{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.contact .row .col .promo-block{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 45.8rem;
+  height: 30.9rem;
+  padding: 5.6rem;
+  color: var(--color-white);
+  background: var(--color-cyan-blue-light);
+}
+
+.contact .row .col h2{
+  margin-bottom: 0.93rem;
+  font-size: 3.75rem;
+}
+
+.contact .row .col p{
+  width: 100%;
+  margin-bottom: 1.24rem;
+  font-size: 1.25rem; 
+}
+
+.promo-block .promo-btn{
+  width: 13.5rem;
+  padding: 1rem 2.5rem;
+  border-radius: 8rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  background: var(--color-black);
+}
+
+
+/*-----------------------------------*\
   #ARTICLES AND TIPS
 \*-----------------------------------*/
 .more-container{
