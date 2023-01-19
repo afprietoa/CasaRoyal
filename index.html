@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Royal</title>
+    <!-- 
+        - Font Awesome
+      -->
+      <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+       crossorigin="anonymous" 
+       referrerpolicy="no-referrer" />
+    <!-- 
+        -Custom css link
+     -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header" id="header">
+
+        <!-- Contact information -->
+        <div class="header-top-info ds-flex">
+            <div class="pull-right ds-flex">
+                <!-- Header address -->
+                <div class="header-info">
+                    <ion-icon name="location-outline" class="marker-icon"></ion-icon>
+                    <span class="location-address">1441 Market St, San Francisco</span>
+                </div>
+                <!-- Header office phone -->
+                <div class="header-info">
+                    <ion-icon name="call-outline" class="call-icon"></ion-icon>
+                    <span class="phone-number">(123) 456-7890</span>
+                </div>
+                <!-- Header fax number -->
+                <div class="header-info">
+                    <ion-icon name="time-outline" class="clock-icon"></ion-icon>
+                    <span class="phone-number">Mon - Sun: 8:00am - 6:00pm</span>
+                </div>
+            </div>
+                <!-- Header social media -->
+                <ul class="pull-left ds-flex">
+                    <li class="menu-social-link">
+                        <a href="" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-login-register-button">
+                        <a href="" class="login-register-button">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            Login/Register
+                        </a>
+                    </li>
+                </ul>
+
+        </div>
+
+        <!-- Nabar -->
+        <nav class="header-navbar ds-flex">
+            <!-- Logo -->
+            <div class="main-logo ds-flex">
+                <img src="./assets/icons/Logo.svg" alt="Casa Royal" class="main-logo__img">
+                <p class="main-logo__text">casa<strong>Royal</strong></p>
+            </div>
+
+            <!-- Links -->
+            <ul class="main-navbar ds-flex">
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">agencies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">contact</a>
+                </li>
+            </ul>
+
+            <!-- Redirect to form -->
+            <button type="button" class="main-button"> submit listing</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero-banner">
+        <div class="hero-container">
+            <h2 class="title-hero">Let Us Guide You Home</h2>
+            <p class="text-hero">Find the house of your dreams</p>
+
+            <div class="main-search">
+                <select name="" id="" class="main-search__type">
+                    <option value="">Select Type</option>
+                    <option value="commertial">Commercial</option>
+                    <option value="office"> - Office</option>
+                    <option value="shop"> - Shop</option>
+                    <option value="condo">Condo</option>
+                    <option value="residential">Residential</option>
+                    <option value="apartment"> - Apartment</option>
+                    <option value="house"> - House</option>
+                    <option value="residential tower"> - Residential Tower</option>
+                    <option value="summer hose"> - Summer House</option>
+                </select>
+                <select name="" id="" class="main-search__status">
+                    <option value="">Select Status</option>
+                    <option value="for rent">For Rent</option>
+                    <option value="for sale">For Sale</option>
+                </select>
+                <form action="" class="search-form">
+                    <input type="text" class="search-form__input">
+                    <button type="submit" class="search-form__button">find propertie</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Propertie section -->
+     <section class="section rent">
+        <div class="title">
+            <p>CASAROYAL REAL ESTATE AGENCY</p>
+            <h1>Featured Properties</h1>
+        </div>
+
+        <div class="rent-center container">
+
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic4.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic5.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/pic6.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/property-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/property-3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/property-4.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/property-5.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/property-6.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="./assets/images/vert2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="pos-top">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                    <div class="pos-bottom">
+                        <span>$700</span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="geopos">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Berverly Hills, CA</span>
+                    </div>
+                    <P>Luxury villa in las vegas</P>
+                    <div>
+                        <div class="avatar">
+                            <img src="./assets/images/agent.png" alt="">
+                            <span>Lionel Richie</span>
+                        </div>
+                        <div class="post">
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                            <span>year ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Area Icon.png" alt="">
+                            <span>3200</span>
+                        </div>
+                        <div class="inside-icons">
+                            <img src="./assets/icons/Garage Icon.png" alt="">
+                            <span>4</span>
+
+                            <img src="./assets/icons/Bathroom Icon.png" alt="">
+                            <span>3</span>
+
+                            <img src="./assets/icons/Bedroom Icon.png" alt="">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+     </section>
+
+    <!-- 
+        - PROPERTIES GALLERY
+     -->
+     <section class="section grid-layout">
+        <div class="title">
+            <p>CASAROYAL REAL ESTATE AGENCY</p>
+            <h1>Properties by Area</h1>
+        </div>
+        <div class="wrapper box-container">
+            <div class="box box1">
+                <img src="./assets/images/Los Angeles.png" alt="">
+                <h2>Los Angeles</h2>
+                <p>25 Properties</p>
+            </div>
+            <div class="box box2">
+                <img src="./assets/images/San Francisco.png" alt="">
+                <h2>San Francisco</h2>
+                <p>19 Properties</p>
+            </div>
+            <div class="box box3">
+                <img src="./assets/images/Seattle.png" alt="">
+                <h2>Seattle</h2>
+                <p>13 Properties</p>
+            </div>
+            <div class="box box4">
+                <img src="./assets/images/San Diego.png" alt="">
+                <h2>San Diego</h2>
+                <p>1 Properties</p>
+            </div>
+        </div>
+     </section>
+
+    <!-- 
+        -Ionicon link
+     -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
