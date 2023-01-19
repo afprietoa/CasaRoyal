@@ -498,6 +498,59 @@ body{
   grid-row: 2;
   height: 21.7rem;
 }
+/*-----------------------------------*\
+  #AGENTS SECTION
+\*-----------------------------------*/
+.agent-enter{
+  display: flex;
+  justify-content: center;
+}
+.agent-box{
+  width: 20rem;
+}
+.agent-top{
+    position: relative;
+    height: 15rem;
+
+    padding: 0.62rem;
+    transition: all 300ms ease-in-out;
+}
+.agent-top img{
+   height: 100%;
+   width: 100%;
+}
+.bottom .agent-tag{
+  font-size: 1.12rem;
+}
+.bottom .agent-name{
+  font-size: 2.25rem;
+}
+.bottom .agent-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+}
+.bottom .agent-info span{
+  width: 100%;
+  display: block;
+  padding-top: 0.5rem;
+}
+
+.bottom .agent-social-media{
+  padding-top: 1.5rem;
+}
+.bottom .agent-social-media ion-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.62rem;
+}
+.bottom .agent-social-media ion-icon:first-child{
+  margin-left: 2.5rem;
+}
+.bottom .agent-social-media ion-icon:last-child{
+  margin-right: 2.5rem;
+}
 
 /*-----------------------------------*\
   #CONTACT
