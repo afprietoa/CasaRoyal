@@ -12,6 +12,8 @@
 * colors
 */  
     --color-black: #000;
+    --color-gray-intensive: #151515;
+    --color-gray-intermediate: #252525;
     --color-white: #fff;
     --color-gray-lighter: #ececec;
     --color-cyan-blue: #2A41E8;
@@ -548,6 +550,7 @@ body{
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
+  border: none;
   background: var(--color-black);
 }
 
@@ -581,4 +584,67 @@ body{
   font-size: 0.81rem;
   color: var(--color-white);
   background: var(--color-cyan-blue);
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+.footer{
+  padding: 4.34rem 0.62rem;
+  color: var(--color-white);
+  background: var(--color-gray-intensive);
+}
+
+.footer .row{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 61.75rem;
+  margin: 0 auto;
+}
+.footer .col{
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--white);
+}
+
+.footer .row .col a{
+  padding: 0.31rem;
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
+  font-size: 0.93rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.footer .row .col h4{
+  margin-bottom: 0.62rem;
+}
+
+.footer-bottom-info{
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--color-gray-intermediate);
+  color: var(--color-white);
+  background: var(--color-gray-intensive);
+}
+
+.pull-left .footer-social-link .social-icon ion-icon{
+  font-size: 2rem;
+}
+
+.footer-social-link{
+  height: 100%;
+  width: 6.25rem;
+  border-left: 1.5px solid var(--color-gray-intermediate);
+  border-right: 1.5px solid var(--color-gray-intermediate);
+}
+.footer-social-link .social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.1rem;
 }
