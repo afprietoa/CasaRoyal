@@ -14,6 +14,7 @@
     --color-black: #000;
     --color-gray-intensive: #151515;
     --color-gray-intermediate: #252525;
+    --color-gray-normal: #AFAFAF;
     --color-white: #fff;
     --color-gray-lighter: #ececec;
     --color-cyan-blue: #2A41E8;
@@ -586,6 +587,68 @@ body{
   background: var(--color-cyan-blue);
 }
 
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
+.testimony{
+  width: 100%;
+  height: 100vh;
+  margin-top: 3.2rem;
+  color: var(--white);
+  background: no-repeat center/cover url("../assets/images/testimonials-bg-1.png");
+}
+
+.testimony .row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.8rem;
+}
+.testimony .row .col{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.testimony .row .col .testimony-block{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%rem;
+  height: 30.9rem;
+  color: var(--color-white);
+}
+
+.testimony .row .col .testimony-title{
+  margin-bottom: 0.93rem;
+  font-size: 3.75rem;
+}
+
+.testimony .row .col .testimony-text{
+  width: 100%;
+  margin-bottom: 1.24rem;
+  font-size: 1.8rem; 
+}
+.testimony .row .col .user{
+  display: flex;
+}
+.testimony .row .col .user img{
+  margin-right: 1.5rem; 
+}
+.testimony .row .col .user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-info p{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.user-info span{
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-gray-normal);
+}
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
