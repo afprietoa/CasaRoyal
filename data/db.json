@@ -241,6 +241,21 @@
       "city": "San Diego",
       "country_state": "CA",
       "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic3.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Litchfield Rd",
+      "price": 40000,
+      "area_size": 2700,
+      "year": 3,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "garages": 4,
+      "type": "summer house",
+      "status": "for rent",
+      "city": "Pasadena",
+      "country_state": "CA",
+      "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-6.jpg"
     }
   ]
 }

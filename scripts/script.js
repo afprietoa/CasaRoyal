@@ -92,7 +92,9 @@ document.addEventListener('click', async ({target}) => {
 
     // functionality to add a property
     if(target.classList.contains('card__favorite')){
-        const favoriteId = target.name;
+
+        const favoriteId = target.id;
+        console.log(target)
         // the favorite property is gotten in favoritesURL
         const URL_PROP = `${URL_FAVES}?id=${favoriteId}`
         const favoriteFaves = await getData(URL_PROP);
