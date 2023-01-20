@@ -1,3 +1,5 @@
+import { postData } from "../helpers/postData.js";
+import { putData } from "../helpers/putData.js";
 
 // It is should to listen the submit event to create or update a property
 export const submitForm = async (form, URL, propertyId) => {
@@ -62,7 +64,7 @@ const validateFields = (arrayLabels, propertyData) => {
         ));
 
         let keyStr = "";
-        for(const key in propertyData[key]){
+        for(const key in propertyData){
             const propertyAttribute = propertyData[key];
 
             if(!propertyAttribute){

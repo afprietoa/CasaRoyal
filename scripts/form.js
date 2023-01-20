@@ -23,6 +23,7 @@ submitButton.innerHTML = propertyId
 : `<i class='bx bx-send'> Create Property`
 
 document.addEventListener('DOMContentLoaded', async () =>{
+
     let property = {};
 
     const URL = propertyId ? `${URL_PROPS}/${propertyId}` : URL_PROPS;

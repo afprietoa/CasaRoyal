@@ -1,4 +1,5 @@
 
+import { deleteData } from "../helpers/deleteData.js";
 import { getData } from "../helpers/getData.js";
 import { postData } from "../helpers/postData.js";
 import { filterStatus } from "../modules/filterStatus.js";
@@ -93,7 +94,7 @@ document.addEventListener('click', async ({target}) => {
     if(target.classList.contains('card__favorite')){
         const favoriteId = target.name;
         // the favorite property is gotten in favoritesURL
-        const URL_PROP = `${URL_FAVES}?ID=${favoriteId}`
+        const URL_PROP = `${URL_FAVES}?id=${favoriteId}`
         const favoriteFaves = await getData(URL_PROP);
 
         // the favorite property is gotten in propertiesURL
@@ -105,6 +106,7 @@ document.addEventListener('click', async ({target}) => {
 
                 await postData(URL_FAVES, favoriteProps[0])
                 const favoriteData = await getData(URL_FAVES);
+                console.log(favoriteData)
             }
     }
 });
