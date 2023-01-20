@@ -1,5 +1,6 @@
 
 import { getData } from "../helpers/getData.js";
+import { postData } from "../helpers/postData.js";
 import { filterStatus } from "../modules/filterStatus.js";
 import { filterTypes } from "../modules/filterTypes.js";
 import { getStatus } from "../modules/getSatus.js";
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async () =>{
 
 });
 
-document.addEventListener('click', ({target}) => {
+document.addEventListener('click', async ({target}) => {
     // redirection to home page
     if(target.classList.contains('main-button')){
         window.location.href = './pages/form.html';
@@ -88,4 +89,39 @@ document.addEventListener('click', ({target}) => {
         location.href = "./pages/form.html"
     }
 
+    // functionality to add a property
+    if(target.classList.contains('card__favorite')){
+        const favoriteId = target.name;
+        // the favorite property is gotten in favoritesURL
+        const URL_PROP = `${URL_FAVES}?ID=${favoriteId}`
+        const favoriteFaves = await getData(URL_PROP);
+
+        // the favorite property is gotten in propertiesURL
+        const URL_FAVE = `${URL_PROPS}?id=${favoriteId}`
+        const favoriteProps = await getData(URL_FAVE);
+        
+        if(favoriteFaves.length === 0 && 
+            Object.entries(favoriteProps).length){
+
+                await postData(URL_FAVES, favoriteProps[0])
+                const favoriteData = await getData(URL_FAVES);
+            }
+    }
 });
+
+// It is should to listen the submit event to search a character
+search.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const searchTerm = document.getElementById('searchBar').value;
+
+    if(searchTerm){
+        const properties = await getData(URL_PROPS);
+        const filteredProperties = properties.filter( 
+            property => property.city.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+        printCards(cardsContainer, filteredProperties)
+    }else{
+        Swal.fire("Invalid search!", "There isn't search tem typed", "question");
+    }
+})

@@ -22,7 +22,7 @@ export const printCards = (containerCards, arrayCards) => {
             </div>
             <div class="pos-bottom">
                 <span>$ ${property.price}</span>
-                <span name="${property.id}"><ion-icon name="heart-outline"></ion-icon></span>
+                <span class="card__favorite" name="${property.id}"><ion-icon name="heart-outline"></ion-icon></span>
             </div>
         </div>
         <div class="bottom">

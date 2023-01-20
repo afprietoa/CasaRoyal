@@ -18,7 +18,9 @@ const propertyId = propertyIdStr ? parseInt(propertyIdStr) : null;
 
 const submitButton = formChildren[formChildren.length-1];
 
-submitButton.innerHTML = propertyId ? 'Save Changes' : 'Create Property'
+submitButton.innerHTML = propertyId 
+? `<i class='bx bx-send'> Save Changes` 
+: `<i class='bx bx-send'> Create Property`
 
 document.addEventListener('DOMContentLoaded', async () =>{
     let property = {};
