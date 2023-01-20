@@ -42,11 +42,10 @@ document.addEventListener('DOMContentLoaded', async () =>{
 document.addEventListener('click', ({target}) => {
     // redirection to home page
     if(target.classList.contains('main-button')){
-        console.log('work!')
         window.location.href = './pages/form.html';
     }
 
-    // funcionality of go to property detail
+    // funcionality of go to property's detail
     if(target.children[0].classList.contains('card__img')){
         sessionStorage.setItem('propertyByShow', JSON.stringify(target.children[0].id));
         location.href = "./pages/detail.html"
@@ -54,6 +53,29 @@ document.addEventListener('click', ({target}) => {
 
     // functionality of delete a property
     if(target.classList.contains('card__delete')){
+        Swal.fire({
+            title: "Do you sure to delete this property?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085D6",
+            cancelButtonColor: "#D33",
+            confirmButtonText: "Yes, delete it!"
+        }).then( async (result) =>{
+            if(result.isConfirmed){
+                Swal.fire("Deleted!", "You file has been deleted", "success");
+                const propertyId = parseInt(target.name);
+                const URL_PROP = `${URL_PROPS}/${propertyId}`
+
+                try {
+                    await deleteData(URL_PROP);
+                    properties = await getData(URL_PROPS);
+                    printCards(cardsContainer, properties);
+                } catch (error) {
+                    console.log('There is an error, could not delete!' + error);
+                }
+            }
+        })
 
     }
 
