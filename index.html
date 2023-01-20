@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Royal</title>
     <!-- 
+        - Boxicons
+     -->
+     <link
+     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+    <!-- 
         -Custom css link
      -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -126,14 +133,14 @@
                     <option value="residential" id="residential">Residential</option>
                     <option value="apartment" id="apartment"> - Apartment</option>
                     <option value="house" id="house"> - House</option>
-                    <option value="residential tower" id="residential-tower"> - Residential Tower</option>
+                    <option value="residential tower" id="residential tower"> - Residential Tower</option>
                     <option value="summer house" id="summer house"> - Summer House</option>
                 </select>
                 <select name="" id="" class="main-search__status">
                     <option value="">Select Status</option>
-                    <option value="all">all</option>
-                    <option value="for rent">For Rent</option>
-                    <option value="for sale">For Sale</option>
+                    <option value="all" id="all">all</option>
+                    <option value="for rent" id="for rent">For Rent</option>
+                    <option value="for sale" id="for sale">For Sale</option>
                 </select>
                 <form action="" class="search-form" id="searchForm">
                     <input type="text" class="search-form__input">
@@ -162,6 +169,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>
@@ -211,6 +226,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -258,6 +281,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>
@@ -307,6 +338,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -354,6 +393,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>
@@ -403,6 +450,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -450,6 +505,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>
@@ -499,6 +562,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -546,6 +617,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>
@@ -595,6 +674,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -643,6 +730,14 @@
                         <span>FEATURED</span>
                         <span>BUY</span>
                     </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
+                    </div>
                     <div class="pos-bottom">
                         <span>$700</span>
                         <span><ion-icon name="heart-outline"></ion-icon></span>
@@ -690,6 +785,14 @@
                     <div class="pos-top">
                         <span>FEATURED</span>
                         <span>BUY</span>
+                    </div>
+                    <div class="pos-contrs">
+                        <button class="card__edit">
+                            <i class='bx bxs-pencil'></i>
+                        </button>
+                        <button class="card__delete">
+                            <i class='bx bxs-trash-alt'></i>
+                        </button>
                     </div>
                     <div class="pos-bottom">
                         <span>$700</span>

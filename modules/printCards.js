@@ -6,15 +6,23 @@ export const printCards = (containerCards, arrayCards) => {
         box.innerHTML = `
         <div class="top">
             <div class="overlay">
-                <img src="${property.image}" alt="" srcset="">
+                <img id="${property.id}}" src="${property.image}" alt="${property.title}" class="card__img">
             </div>
             <div class="pos-top">
                 <span>${property.type}</span>
                 <span>${property.status}</span>
             </div>
+            <div class="pos-contrs">
+                <button class="card__edit" name="${property.id}">
+                    <i class='bx bxs-pencil'></i>
+                </button>
+                <button class="card__delete" name="${property.id}">
+                    <i class='bx bxs-trash-alt'></i>
+                </button>
+            </div>
             <div class="pos-bottom">
                 <span>$ ${property.price}</span>
-                <span><ion-icon name="heart-outline"></ion-icon></span>
+                <span name="${property.id}"><ion-icon name="heart-outline"></ion-icon></span>
             </div>
         </div>
         <div class="bottom">

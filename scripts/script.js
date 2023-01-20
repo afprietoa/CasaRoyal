@@ -40,10 +40,26 @@ document.addEventListener('DOMContentLoaded', async () =>{
 });
 
 document.addEventListener('click', ({target}) => {
-    // --- the redirection to home page ---
+    // redirection to home page
     if(target.classList.contains('main-button')){
         console.log('work!')
         window.location.href = './pages/form.html';
+    }
+
+    // funcionality of go to property detail
+    if(target.children[0].classList.contains('card__img')){
+        sessionStorage.setItem('propertyByShow', JSON.stringify(target.children[0].id));
+        location.href = "./pages/detail.html"
+    }
+
+    // functionality of delete a property
+    if(target.classList.contains('card__delete')){
+
+    }
+
+    // functionality of update a property
+    if(target.classList.contains('card__edit')){
+
     }
 
 });
