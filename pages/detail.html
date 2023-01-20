@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Royal</title>
+    <!-- 
+        - Font Awesome
+      -->
+      <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+       crossorigin="anonymous" 
+       referrerpolicy="no-referrer" />
+    <!-- 
+        -Custom css link
+     -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/detail.css">
+</head>
+<body>
+    <!-- 
+        - HEADER 
+    -->
+    <header class="sticky-header" id="header">
+
+        <!-- Contact information -->
+        <div class="header-top-info ds-flex">
+            <div class="pull-right ds-flex">
+                <!-- Header address -->
+                <div class="header-info">
+                    <ion-icon name="location-outline" class="marker-icon"></ion-icon>
+                    <span class="location-address">1441 Market St, San Francisco</span>
+                </div>
+                <!-- Header office phone -->
+                <div class="header-info">
+                    <ion-icon name="call-outline" class="call-icon"></ion-icon>
+                    <span class="phone-number">(123) 456-7890</span>
+                </div>
+                <!-- Header fax number -->
+                <div class="header-info">
+                    <ion-icon name="time-outline" class="clock-icon"></ion-icon>
+                    <span class="phone-number">Mon - Sun: 8:00am - 6:00pm</span>
+                </div>
+            </div>
+                <!-- Header social media -->
+                <ul class="pull-left ds-flex">
+                    <li class="menu-social-link">
+                        <a href="" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-login-register-button">
+                        <a href="" class="login-register-button">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            Login/Register
+                        </a>
+                    </li>
+                </ul>
+
+        </div>
+
+        <!-- Nabar -->
+        <nav class="header-navbar ds-flex">
+            <!-- Logo -->
+            <div class="main-logo ds-flex">
+                <img src="../assets/icons/Logo.svg" alt="Casa Royal" class="main-logo__img">
+                <p class="main-logo__text">casa<strong>Royal</strong></p>
+            </div>
+
+            <!-- Links -->
+            <ul class="main-navbar ds-flex">
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">agencies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">contact</a>
+                </li>
+            </ul>
+
+            <!-- Redirect to form -->
+            <button type="button" class="main-button"> submit listing</button>
+        </nav>
+    </header>
+
+    <!-- 
+        - PROPERTY DETAIL
+     -->
+     <section class="property">
+        <div class="row">
+            <div class="col-5">
+                <img class="porterty-photo" src="../assets/images/chuttersnap.png" alt="">
+            </div>
+            <div class="col-5 property-info">
+                <span class="property-tag">Summer House For Rent</span>
+                <div class="property-block">
+                    <div>
+                        <h2 class="property-title">Countryside Modern</h2>
+                        <h2 class="property-title">Summer House</h2>
+                    </div>
+                    <div class="property-location">
+                        <ion-icon name="radio-button-on-outline"></ion-icon>
+                        <span>Pasadena, CA</span>
+                    </div>
+                    <P class="property-price">
+                        From $ <span>1,300.00</span> Per Month
+                    </P>
+                    <ion-icon class="icon-play" name="play-circle-outline"></ion-icon>
+                    <div class="property-features">
+                        <div class="property-area property-content">
+                            <img src="../assets/icons/Area Icon 2.png" alt="">
+                            <div class="datum">
+                                <span>1600</span>
+                                <span>Sq Ft</span>
+                            </div>
+                        </div>
+                        <div class="property-beds property-content">
+                            <img src="../assets/icons/Bedroom Icon 2.png" alt="">
+                            <div class="datum">
+                                <span>2</span>
+                                <span>Beds</span>
+                            </div>
+                        </div>
+                        <div class="property-bath property-content">
+                            <img src="../assets/icons/Bathroom Icon 2.png" alt="">
+                            <div class="datum">
+                                <span>1</span>
+                                <span>Baths</span>
+                            </div>
+                        </div>
+                        <div class="property-garage property-content">
+                            <img src="../assets/icons/Garage Icon 2.png" alt="">
+                            <div class="datum">
+                                <span>1</span>
+                                <span>Garage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- 
+        - FOOTER
+     -->
+    <!-- Contact information -->
+    <div class="footer-bottom-info ds-flex">
+        <div class="pull-right ds-flex">
+                <!-- Logo -->
+                <div class="main-logo ds-flex">
+                    <img src="../assets/icons/Logo1.svg" alt="Casa Royal" class="main-logo__img">
+                    <p class="main-logo__text">casa<strong>Royal</strong></p>
+                </div>
+        </div>
+            <!-- Header social media -->
+            <ul class="pull-left ds-flex">
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+    </div>
+     <footer class="footer">
+        <div class="row">
+            <div class="col ds-flex">
+                <h4>INFORMATION</h4>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Term and Conditions</a>
+                <a href="">Shipping Guide</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>PROPERTIES</h4>
+                <a href="">Online Store</a>
+                <a href="">Customer Services</a>
+                <a href="">Promotion</a>
+                <a href="">Top Brands</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>LOCATIONS</h4>
+                <a href="">Beverly Hills</a>
+                <a href="">Los Angeles</a>
+                <a href="">Mission Viejo</a>
+                <a href="">Passadena</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>USEFUL LINK</h4>
+                <a href="">Blog</a>
+                <a href="">Our Contacts</a>
+                <a href="">Submit Listing</a>
+                <a href="">Support</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>ABOUT CASAROYAL</h4>
+                <a href="">Privacy Policy</a>
+                <a href="">FAQs</a>
+                <a href="">111 Wall Street, USA, New York</a>
+                <a href="">Phone: (123) 456-7890</a>
+            </div>
+        </div>
+     </footer>
+
+    <!-- 
+        -Ionicon link
+     -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
