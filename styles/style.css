@@ -351,10 +351,12 @@ body{
 
 .rent .box .pos-top span:first-child{
   background: var(--color-cyan-blue);
+  text-transform: uppercase;
 }
 
 .rent .box .pos-top span:last-child{
   background: var(--color-orange);
+  text-transform: uppercase;
 }
 .rent .box .pos-bottom{
   position: absolute;

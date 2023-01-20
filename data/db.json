@@ -10,7 +10,7 @@
         "bathrooms": 4,
         "garages": 2,
         "type": "summer house",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic1.jpg"
@@ -25,7 +25,7 @@
         "bathrooms": 3,
         "garages": 4,
         "type": "house",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "Bervely Hills",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic2.jpg"
@@ -40,7 +40,7 @@
         "bathrooms": 3,
         "garages": 6,
         "type": "office",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "San Diego",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic3.jpg"
@@ -55,7 +55,7 @@
         "bathrooms": 2,
         "garages": 2,
         "type": "house",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "San Diego",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic4.jpg"
@@ -70,7 +70,7 @@
         "bathrooms": 3,
         "garages": 2,
         "type": "apartment",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "San Diego",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic5.jpg"
@@ -85,7 +85,7 @@
         "bathrooms": 3,
         "garages": 2,
         "type": "house",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic6.jpg"
@@ -99,7 +99,7 @@
         "bathrooms": 3,
         "garages": 2,
         "type": "shop",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-2.jpg"
@@ -114,7 +114,7 @@
         "bathrooms": 3,
         "garages": 2,
         "type": "house",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-3.jpg"
@@ -129,7 +129,7 @@
         "bathrooms": 2,
         "garages": 2,
         "type": "office",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-4.jpg"
@@ -144,7 +144,7 @@
         "bathrooms": 3,
         "garages": 6,
         "type": "apartment",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-5.jpg"
@@ -159,7 +159,7 @@
         "bathrooms": 3,
         "garages": 4,
         "type": "summer house",
-        "staus": "for rent",
+        "status": "for rent",
         "city": "Pasadena",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/property-6.jpg"
@@ -174,7 +174,7 @@
         "bathrooms": 4,
         "garages": 2,
         "type": "summer house",
-        "staus": "for sale",
+        "status": "for sale",
         "city": "San Diego",
         "country_state": "CA",
         "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/vert2.jpg"
@@ -191,7 +191,7 @@
             "bathrooms": 4,
             "garages": 2,
             "type": "summer house",
-            "staus": "for sale",
+            "status": "for sale",
             "city": "Pasadena",
             "country_state": "CA",
             "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic1.jpg"
@@ -206,7 +206,7 @@
             "bathrooms": 3,
             "garages": 4,
             "type": "house",
-            "staus": "for rent",
+            "status": "for rent",
             "city": "Bervely Hills",
             "country_state": "CA",
             "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic2.jpg"
@@ -221,7 +221,7 @@
             "bathrooms": 3,
             "garages": 6,
             "type": "office",
-            "staus": "for rent",
+            "status": "for rent",
             "city": "San Diego",
             "country_state": "CA",
             "image": "https://raw.githubusercontent.com/afprietoa/CasaRoyal/main/assets/images/pic3.jpg"

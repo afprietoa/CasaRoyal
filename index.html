@@ -103,7 +103,7 @@
             </ul>
 
             <!-- Redirect to form -->
-            <button type="button" class="main-button" id="formBtn"> submit listing</button>
+            <button type="button" class="main-button"> submit listing</button>
         </nav>
     </header>
 
@@ -118,22 +118,24 @@
             <div class="main-search">
                 <select name="" id="" class="main-search__type">
                     <option value="">Select Type</option>
-                    <option value="commertial">Commercial</option>
-                    <option value="office"> - Office</option>
-                    <option value="shop"> - Shop</option>
-                    <option value="condo">Condo</option>
-                    <option value="residential">Residential</option>
-                    <option value="apartment"> - Apartment</option>
-                    <option value="house"> - House</option>
-                    <option value="residential tower"> - Residential Tower</option>
-                    <option value="summer hose"> - Summer House</option>
+                    <option value="all" id="all">all</option>
+                    <option value="commertial" id="commertial">Commercial</option>
+                    <option value="office" id="office"> - Office</option>
+                    <option value="shop" id="shop"> - Shop</option>
+                    <option value="condo" id="condo">Condo</option>
+                    <option value="residential" id="residential">Residential</option>
+                    <option value="apartment" id="apartment"> - Apartment</option>
+                    <option value="house" id="house"> - House</option>
+                    <option value="residential tower" id="residential-tower"> - Residential Tower</option>
+                    <option value="summer house" id="summer house"> - Summer House</option>
                 </select>
                 <select name="" id="" class="main-search__status">
                     <option value="">Select Status</option>
+                    <option value="all">all</option>
                     <option value="for rent">For Rent</option>
                     <option value="for sale">For Sale</option>
                 </select>
-                <form action="" class="search-form">
+                <form action="" class="search-form" id="searchForm">
                     <input type="text" class="search-form__input">
                     <button type="submit" class="search-form__button">find propertie</button>
                 </form>
@@ -150,7 +152,7 @@
             <h1>Featured Properties</h1>
         </div>
 
-        <div class="rent-center container">
+        <div class="rent-center container" id="cardsContainer">
 
             <div class="box">
                 <div class="top">
@@ -1054,12 +1056,16 @@
     <!-- 
         - custom js link
      -->
-    <script src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
 
     <!-- 
         -Ionicon link
      -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- 
+        -Sweetalert link
+     -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
