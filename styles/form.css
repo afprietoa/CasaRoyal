@@ -1,0 +1,102 @@
+
+:root{
+    /** 
+    * colors
+    */  
+        --color-gray-lighter: #ececec;
+        --color-white: #fff;
+        --color-gray-middle: #797979;
+        --color-cyan-blue-light: #3f54ea;
+        --color-cyan-blue: #2A41E8;   
+/** 
+ * typography
+ */
+ --font-rubik: 'Rubik', sans-serif;
+}
+.hero-form{
+    height: 10.31rem;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../assets/images/blog.jpg);
+    background-position: bottom 800px right 20px;
+}
+.listing-front{
+    height: 70rem;
+    width: 100%;
+    padding: 0 2.4rem;
+}
+.listing-front .form-container,
+.listing-front .form-container .row{
+    width: 100%;
+    height: 100%;
+}
+
+
+.form-container input,
+.form-container select{
+    width: 100%;
+    height: 2.81rem;
+    margin-bottom: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--color-gray-lighter);
+}
+.listing-front .form-container .row .col-12{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.listing-front .form-container .row .form-groupX2,
+.listing-front .form-container .row .form-groupX3{
+    display: flex;
+    justify-content: space-between;
+}
+.listing-front .form-container .row .subtitle-form{
+    font-size: 1.53rem;
+    margin: 3.75rem 0;
+    padding-bottom: 1.87rem;
+    width: 100%;
+}
+.listing-front .form-container .row .col-4{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.listing-front .form-container .row .col-4 input{
+    width: 24rem;
+}
+.listing-front .form-container .row .col-6{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.listing-front .form-container .row .col-6 input,
+.listing-front .form-container .row .col-6 select{
+    width: 38rem;
+}
+.listing-front .form-container .row .col-4 label,
+.listing-front .form-container .row .col-6 label,
+.listing-front .form-container .row .col-12 label{
+    padding-bottom: 0.62rem;
+    font-size: 0.87rem;
+    text-transform: uppercase;
+    color: var(--color-gray-middle);
+}
+.form-container .row .form-btn{
+    height: 3.25rem;
+    width: 15rem;
+    margin-top: 1.87rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-family: var(--font-rubik);
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+    color: var(--color-white);
+    background: var(--color-cyan-blue-light);
+}
+.form-container .row .form-btn:hover{
+    background: var(--color-cyan-blue);
+}
+.form-container .row .form-btn i{
+    margin-right: 1rem;
+}

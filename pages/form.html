@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Royal</title>
+    <!-- 
+        - Boxicons
+     -->
+     <link
+     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+    <!-- 
+        -Custom css link
+     -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+<body>
+    <!-- 
+        - HEADER 
+    -->
+    <header class="sticky-header" id="header">
+
+        <!-- Contact information -->
+        <div class="header-top-info ds-flex">
+            <div class="pull-right ds-flex">
+                <!-- Header address -->
+                <div class="header-info">
+                    <ion-icon name="location-outline" class="marker-icon"></ion-icon>
+                    <span class="location-address">1441 Market St, San Francisco</span>
+                </div>
+                <!-- Header office phone -->
+                <div class="header-info">
+                    <ion-icon name="call-outline" class="call-icon"></ion-icon>
+                    <span class="phone-number">(123) 456-7890</span>
+                </div>
+                <!-- Header fax number -->
+                <div class="header-info">
+                    <ion-icon name="time-outline" class="clock-icon"></ion-icon>
+                    <span class="phone-number">Mon - Sun: 8:00am - 6:00pm</span>
+                </div>
+            </div>
+                <!-- Header social media -->
+                <ul class="pull-left ds-flex">
+                    <li class="menu-social-link">
+                        <a href="" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-social-link">
+                        <a href="" class="social-icon">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="menu-login-register-button">
+                        <a href="" class="login-register-button">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            Login/Register
+                        </a>
+                    </li>
+                </ul>
+
+        </div>
+
+        <!-- Nabar -->
+        <nav class="header-navbar ds-flex">
+            <!-- Logo -->
+            <div class="main-logo ds-flex">
+                <img src="../assets/icons/Logo.svg" alt="Casa Royal" class="main-logo__img">
+                <p class="main-logo__text">casa<strong>Royal</strong></p>
+            </div>
+
+            <!-- Links -->
+            <ul class="main-navbar ds-flex">
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">agencies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">contact</a>
+                </li>
+            </ul>
+
+            <!-- Redirect to form -->
+            <button type="button" class="main-button"> submit listing</button>
+        </nav>
+    </header>
+
+        <!-- 
+        - HERO 
+    -->
+    <div class="hero-banner hero-form">
+        <div class="hero-container">
+            <h2 class="title-hero">SUBMIT LISTING FRONT</h2>
+        </div>
+    </div>
+
+    <!-- 
+        - PROPERTY FORM
+     -->
+     <section class="listing-front">
+        <form class="form-container">
+            <div class="row">
+                <div class="col-12 subtitle-form">
+                    <h4 class="form-title"> Basic Information</h4>
+                </div>
+                <div class="col-12">
+                    <label for=""> Title (Mandatory)</label>
+                    <input type="text">
+                </div>
+                <div class="form-groupX3">
+                    <div class="col-4">
+                        <label for=""> Sale or Rent Price</label>
+                        <input type="number">
+                    </div>
+                    <div class="col-4">
+                        <label for=""> Area size</label>
+                        <input type="number">
+                    </div>
+                    <div class="col-4">
+                        <label for=""> Year</label>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="form-groupX3">
+                    <div class="col-4">
+                        <label for=""> Bedrooms</label>
+                        <input type="number">
+                    </div>
+                    <div class="col-4">
+                        <label for=""> Bathrooms</label>
+                        <input type="number">
+                    </div>
+                    <div class="col-4">
+                        <label for=""> Garages</label>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="form-groupX2">
+                    <div class="col-6">
+                        <label for=""> Type</label>
+                        <select name="" id="" class="main-search__type">
+                            <option value="">Select Type</option>
+                            <option value="commertial">Commercial</option>
+                            <option value="office"> - Office</option>
+                            <option value="shop"> - Shop</option>
+                            <option value="condo">Condo</option>
+                            <option value="residential">Residential</option>
+                            <option value="apartment"> - Apartment</option>
+                            <option value="house"> - House</option>
+                            <option value="residential tower"> - Residential Tower</option>
+                            <option value="summer hose"> - Summer House</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for=""> Status</label>
+                        <select name="" id="" class="main-search__status">
+                            <option value="">Select Status</option>
+                            <option value="for rent">For Rent</option>
+                            <option value="for sale">For Sale</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 class="form-title subtitle-form"> Location</h4>
+                </div>
+                <div class="form-groupX2">
+                    <div class="col-6">
+                        <label for=""> City</label>
+                        <input type="text">
+                    </div>
+                    <div class="col-6">
+                        <label for=""> Country / State</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 class="form-title subtitle-form"> Gallery</h4>
+                </div>
+                <div class="col-12">
+                    <label for=""> Image</label>
+                    <input type="text">
+                </div>
+                <button class="form-btn">
+                    <i class='bx bx-send'></i>Send
+                </button>
+            </div>
+        </form>
+     </section>
+
+    <!-- 
+        - FOOTER
+     -->
+    <!-- Contact information -->
+    <div class="footer-bottom-info ds-flex">
+        <div class="pull-right ds-flex">
+                <!-- Logo -->
+                <div class="main-logo ds-flex">
+                    <img src="../assets/icons/Logo1.svg" alt="Casa Royal" class="main-logo__img">
+                    <p class="main-logo__text">casa<strong>Royal</strong></p>
+                </div>
+        </div>
+            <!-- Header social media -->
+            <ul class="pull-left ds-flex">
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="menu-social-link footer-social-link">
+                    <a href="" class="social-icon">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+    </div>
+     <footer class="footer">
+        <div class="row">
+            <div class="col ds-flex">
+                <h4>INFORMATION</h4>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Term and Conditions</a>
+                <a href="">Shipping Guide</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>PROPERTIES</h4>
+                <a href="">Online Store</a>
+                <a href="">Customer Services</a>
+                <a href="">Promotion</a>
+                <a href="">Top Brands</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>LOCATIONS</h4>
+                <a href="">Beverly Hills</a>
+                <a href="">Los Angeles</a>
+                <a href="">Mission Viejo</a>
+                <a href="">Passadena</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>USEFUL LINK</h4>
+                <a href="">Blog</a>
+                <a href="">Our Contacts</a>
+                <a href="">Submit Listing</a>
+                <a href="">Support</a>
+            </div>
+            <div class="col ds-flex">
+                <h4>ABOUT CASAROYAL</h4>
+                <a href="">Privacy Policy</a>
+                <a href="">FAQs</a>
+                <a href="">111 Wall Street, USA, New York</a>
+                <a href="">Phone: (123) 456-7890</a>
+            </div>
+        </div>
+     </footer>
+
+    <!-- 
+        -Ionicon link
+     -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
