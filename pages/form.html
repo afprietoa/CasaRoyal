@@ -134,41 +134,41 @@
                     <h4 class="form-title"> Basic Information</h4>
                 </div>
                 <div class="col-12">
-                    <label for=""> Title (Mandatory)</label>
-                    <input type="text">
+                    <label for="title"> Title (Mandatory)</label>
+                    <input id="title" type="text">
                 </div>
                 <div class="form-groupX3">
                     <div class="col-4">
-                        <label for=""> Sale or Rent Price</label>
-                        <input type="number">
+                        <label for="price"> Sale or Rent Price</label>
+                        <input id="price" type="number">
                     </div>
                     <div class="col-4">
-                        <label for=""> Area size</label>
-                        <input type="number">
+                        <label for="area_size"> Area size</label>
+                        <input id="area_size" type="number">
                     </div>
                     <div class="col-4">
-                        <label for=""> Year</label>
-                        <input type="number">
+                        <label for="year"> Year</label>
+                        <input id="year" type="number">
                     </div>
                 </div>
                 <div class="form-groupX3">
                     <div class="col-4">
-                        <label for=""> Bedrooms</label>
-                        <input type="number">
+                        <label for="bedrooms"> Bedrooms</label>
+                        <input id="bedrooms" type="number">
                     </div>
                     <div class="col-4">
-                        <label for=""> Bathrooms</label>
-                        <input type="number">
+                        <label for="bathrooms"> Bathrooms</label>
+                        <input id="bathrooms" type="number">
                     </div>
                     <div class="col-4">
-                        <label for=""> Garages</label>
-                        <input type="number">
+                        <label for="garages"> Garages</label>
+                        <input id="garages" type="number">
                     </div>
                 </div>
                 <div class="form-groupX2">
                     <div class="col-6">
-                        <label for=""> Type</label>
-                        <select name="" id="" class="main-search__type">
+                        <label for="type"> Type</label>
+                        <select name="" id="type" class="main-search__type">
                             <option value="">Select Type</option>
                             <option value="commertial">Commercial</option>
                             <option value="office"> - Office</option>
@@ -182,8 +182,8 @@
                         </select>
                     </div>
                     <div class="col-6">
-                        <label for=""> Status</label>
-                        <select name="" id="" class="main-search__status">
+                        <label for="status"> Status</label>
+                        <select name="" id="status" class="main-search__status">
                             <option value="">Select Status</option>
                             <option value="for rent">For Rent</option>
                             <option value="for sale">For Sale</option>
@@ -195,22 +195,22 @@
                 </div>
                 <div class="form-groupX2">
                     <div class="col-6">
-                        <label for=""> City</label>
-                        <input type="text">
+                        <label for="city"> City</label>
+                        <input id="city" type="text">
                     </div>
                     <div class="col-6">
-                        <label for=""> Country / State</label>
-                        <input type="text">
+                        <label for="country_state"> Country / State</label>
+                        <input id="country_state" type="text">
                     </div>
                 </div>
                 <div class="col-12">
                     <h4 class="form-title subtitle-form"> Gallery</h4>
                 </div>
                 <div class="col-12">
-                    <label for=""> Image</label>
-                    <input type="text">
+                    <label for="image"> Image</label>
+                    <input id="image" type="text">
                 </div>
-                <button class="form-btn">
+                <button class="form-btn" type="submit">
                     <i class='bx bx-send'></i>Send
                 </button>
             </div>
@@ -293,6 +293,11 @@
             </div>
         </div>
      </footer>
+
+    <!-- 
+        - custom js link
+     -->
+     <script type="module" src="../scripts/form.js"></script>
 
     <!-- 
         -Ionicon link

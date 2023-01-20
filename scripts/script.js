@@ -20,6 +20,9 @@ const search = document.getElementById('searchForm');
 
 document.addEventListener('DOMContentLoaded', async () =>{
 
+    sessionStorage.removeItem('propertyByUpdate');
+    sessionStorage.removeItem('propertyByShow');
+
     try {
         // card printing
         const properties = await getData(URL_PROPS);
@@ -45,13 +48,13 @@ document.addEventListener('click', ({target}) => {
         window.location.href = './pages/form.html';
     }
 
-    // funcionality of go to property's detail
+    // funcionality to go to property's detail
     if(target.children[0].classList.contains('card__img')){
         sessionStorage.setItem('propertyByShow', JSON.stringify(target.children[0].id));
         location.href = "./pages/detail.html"
     }
 
-    // functionality of delete a property
+    // functionality to delete a property
     if(target.classList.contains('card__delete')){
         Swal.fire({
             title: "Do you sure to delete this property?",
@@ -79,9 +82,10 @@ document.addEventListener('click', ({target}) => {
 
     }
 
-    // functionality of update a property
+    // functionality to update a property
     if(target.classList.contains('card__edit')){
-
+        sessionStorage.setItem('propertyByUpdate', JSON.stringify(target.name));
+        location.href = "./pages/form.html"
     }
 
 });
